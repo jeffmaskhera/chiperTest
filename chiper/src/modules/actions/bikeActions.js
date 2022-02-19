@@ -9,7 +9,8 @@ export function getBikes(pageCurrent, keyword, dateInit, dateFinish){
         constructorEndpoint = `${endPointRead}/api/v3/search?page=${pageCurrent}&per_page=10&query=${keyword}&location=IP&distance=10&stolenness=stolen`;
     }
     if (dateInit?.length > 0 && dateFinish.length > 0) {
-        console.log("por fecha, endpoint no filtra por fecha ")
+        constructorEndpoint = `${endPointRead}/api/v3/search?page=${pageCurrent}&per_page=10&dateInit=${dateInit}&dateLast=${dateFinish}&location=IP&distance=10&stolenness=stolen`;
+        console.log("endpoint no filtra por fecha")
     }
 
     return async (dispatch) => {
