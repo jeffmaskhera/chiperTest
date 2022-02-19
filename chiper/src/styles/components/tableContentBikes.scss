@@ -1,0 +1,30 @@
+
+.container-table-home {
+  max-height: 477px;
+  overflow-y: auto;
+  display: grid;
+  gap: 10px;
+  scroll-behavior: smooth;
+
+  .tableContents {
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    .item-contents-table {
+      display: grid;
+      grid-template-columns: 150px auto;
+      gap: 10px;
+      align-items: flex-start;
+      img {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+      }
+      .grid-info-table {
+        display: grid;
+        gap: 10px;
+      }
+    }
+  }
+}
+

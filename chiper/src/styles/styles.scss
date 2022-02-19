@@ -1,0 +1,13 @@
+//iu
+@import "./ui/ui";
+
+//components
+@import "./components/tableContentBikes";
+@import "./components/paginator";
+@import "./components/filterHeadTable";
+@import "./components/loading";
+@import "./components/map";
+
+//pages
+@import "./pages/home";
+@import "./pages/detailPage";
